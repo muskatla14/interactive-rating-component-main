@@ -1,0 +1,27 @@
+.thankyou-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: center;
+
+    &__seleceted-rate {
+        color: $orange;
+        background: lighten($dark-blue, 5);
+        padding: 5px 12px;
+        border-radius: 50px;
+    }
+
+    &__text {
+        h1 {
+            color: $white;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $light-gray;
+        }
+    }
+}

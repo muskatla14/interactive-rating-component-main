@@ -1,9 +1,24 @@
 @import 'config';
+@import 'rating';
+@import 'thankyou';
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+body {
+    font-family: $font-stack;
+    background: $very-dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
 }
 
+.main {
+    background: $dark-blue;
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 350px;
+}
+    

@@ -1,0 +1,71 @@
+.rating-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 40vh;
+
+    &__logo {
+        padding: 1rem 0;
+        img {
+            background: lighten($dark-blue, 5);
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+    }   
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $light-gray;
+        padding: 1rem 0;
+    }
+
+    &__rate {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+        .rate {
+            background: lighten($dark-blue, 5);
+            border-radius: 50%;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 2.1;
+            color: $light-gray;
+            cursor: pointer;
+            @include transition-ease;
+
+            &:hover {
+                background-color: $medium-grey;
+                color: $white;
+            }
+        }
+    }
+
+    &__btn {
+        margin: 1rem 0;
+        .btn {
+            width: 100%;    
+            background: $orange;
+            color: $white;
+            border: none;
+            border-radius: 30px;
+            padding: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+            cursor: pointer;
+            @include transition-ease;
+
+            &:hover {
+                background: $white;
+                color: $orange;
+            }
+        }
+    }
+}

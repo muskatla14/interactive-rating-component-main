@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,8 +11,6 @@
     />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -29,48 +25,53 @@
     <!-- Rating state start -->
     <div class="main">
       <div class="rating-state">
-        <div class="star">
+        <div class="rating-state__logo">
           <img src="./images/icon-star.svg" alt="" />
         </div>
-        <h1>How did we do?</h1>
+        <h2>How did we do?</h2>
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <span class="rate">1</span>
-        <span class="rate">2</span>
-        <span class="rate">3</span>
-        <span class="rate">4</span>
-        <span class="rate">5</span>
-        <div>
+        <div class="rating-state__rate">
+          <span class="rate">1</span>
+          <span class="rate">2</span>
+          <span class="rate">3</span>
+          <span class="rate">4</span>
+          <span class="rate">5</span>
+        </div>
+        <div class="rating-state__btn">
           <button class="btn">Submit</button>
         </div>
       </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thankyou-state">
-        <div class="illustarion">
+      <div class="thankyou-state" style="display: none">
+        <div class="thankyou-state__illustarion">
           <img src="./images/illustration-thank-you.svg" alt="" />
         </div>
-        <p class="seleceted-rate">
+        <p class="thankyou-state__seleceted-rate">
           You selected
-          <!-- Add rating here -->
+          <span class="rate"></span>
           out of 5
         </p>
-        <h1>Thank you!</h1>
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
+        <div class="thankyou-state__text">
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
       <!-- Thank you state end -->
     </div>
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
