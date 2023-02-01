@@ -44,6 +44,16 @@
                 background-color: $medium-grey;
                 color: $white;
             }
+
+            &:focus {
+                background: $orange!important;
+                transition: 0;
+            }
+        }
+
+        .rate.active {
+            background: $orange;
+            color: $white;
         }
     }
 

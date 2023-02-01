@@ -3,8 +3,6 @@
 @import 'thankyou';
 
 
-
-
 body {
     font-family: $font-stack;
     background: $very-dark-blue;
@@ -15,10 +13,11 @@ body {
     font-size: 15px;
 }
 
+
 .main {
     background: $dark-blue;
     border-radius: 20px;
-    padding: 1rem;
-    max-width: 350px;
+    padding: 1rem 1.5rem;
+    max-width: 340px;
 }
     

@@ -1,13 +1,13 @@
 .thankyou-state {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between  ;
     gap: 20px;
     padding: 1rem 0;
     align-items: center;
     text-align: center;
 
-    &__seleceted-rate {
+    &__selected-rate {
         color: $orange;
         background: lighten($dark-blue, 5);
         padding: 5px 12px;
